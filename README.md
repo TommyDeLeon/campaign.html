@@ -6,3 +6,4 @@ I am an aspiring student-leader in my school, and we need to collect questions f
 ![image](https://github.com/TommyDeLeon/campaign.html/assets/144635056/6b888391-e6cd-4536-b022-89d4d5bec71a)
 
 I am happy to say that when you hover the submit button, it has transition effect that completely fills the button within 0.5 seconds. :)
+(The web page scales content to 80% of its original size to ensure full visibility within the viewport.)
