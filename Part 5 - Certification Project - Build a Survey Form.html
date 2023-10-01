@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Part 5 - Certification Project - Build a Survey Form.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Survey Form</h1>
+            <h2 id="description" class="description text-center">
+                We encourage you to submit your questions for the candidates running for the Academic Organization of Electronics Engineering.
+            </h2>
+        </header>
+        <form id="survey-form">
+            <!-- Name -->
+            <div class="form-group">
+                <label id="name-label" for="name">Name of Student</label>
+                <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Enter your name"
+                    required
+                />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label id="email-label" for="email">Institutional Email</label>
+                <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="Enter your Email"
+                    required
+                />
+            </div>
+
+            <!-- Student Number -->
+            <div class="form-group">
+                <label id="number-label" for="number">Student Number</label>
+                <input
+                    type="number"
+                    name="studentnumber"
+                    id="number"
+                    class="form-control"
+                    placeholder="Enter your Student Number"
+                    required
+                />
+            </div>
+
+            <!-- Current Year Level -->
+            <div class="form-group">
+                <p>Indicate Year Level:</p>
+                <select id="dropdown" name="yearlevel" class="form-control" required>
+                    <option disabled selected value>Select Year Level</option>
+                    <option value="firstyear">First Year</option>
+                    <option value="secondyear">Second Year</option>
+                    <option value="thirdyear">Third Year</option>
+                    <option value="fourthyear">Fourth Year</option>
+                    <option value="irregular">Irregular</option>
+                </select>
+            </div>
+
+            <!-- Data Privacy Agreement -->
+            <div class="form-group">
+                <p>Data Privacy Advisory:</p>
+                <p>Pursuant to the Republic Act No. 10173 also known as Data Privacy Act of 2012, the Rizal Technological University Head Election Officer of Electronics Engineering Pasig, humbly requests your consent to collect your personal information.</p>
+                <label>
+                    <input
+                        name="agreement"
+                        value="accept"
+                        type="radio"
+                        class="input-radio"
+                        checked
+                    />I accept.</label
+                >
+                <label>
+                    <input
+                        name="agreement"
+                        value="reject"
+                        type="radio"
+                        class="input-radio"
+                    />I do not accept.</label
+                >
+            </div>
+
+            <!-- Platforms -->
+            <div class="form-group">
+                <p>What Platforms of the Party You have Read?<span class="clue">(Check all that apply)</span></p>
+                <label><input name="prefer" value="faq-check" type="checkbox" class="input-checkbox" />FAQ Check</label>
+                <label><input name="prefer" value="ece-access" type="checkbox" class="input-checkbox" />ECE Access</label>
+                <label><input name="prefer" value="iecep-engagements" type="checkbox" class="input-checkbox" />IECEP Engagements</label>
+                <label><input name="prefer" value="get-to-know-u" type="checkbox" class="input-checkbox" />Get to Know U's</label>
+                <label><input name="prefer" value="ece-sports" type="checkbox" class="input-checkbox" />ECE-Sports</label>
+                <label><input name="prefer" value="ece-week" type="checkbox" class="input-checkbox" />ECE Week</label>
+                <label><input name="prefer" value="fund-raising" type="checkbox" class="input-checkbox" />Fund Raising</label>
+            </div>
+
+            <!-- Who to ask -->
+            <div class="form-group">
+                <p>Select who do you want to ask questions, whether it is for the whole party, or to a specific candidate.</p>
+                <select id="whotoask" name="whotoask" class="form-control" required>
+                    <option disabled selected value>Select who to ask your questions.</option>
+                    <option value="party">The whole party</option>
+                    <option value="president">President</option>
+                    <option value="vpinternal">Vice President - Internal</option>
+                    <option value="vpexternal">Vice President - External</option>
+                    <option value="secinternal">Secretary - Internal</option>
+                    <option value="secexternal">Secretary - External</option>
+                    <option value="treasurer">Treasurer</option>
+                    <option value="assttreasurer">Assistant Treasurer</option>
+                    <option value="auditor">Auditor</option>
+                    <option value="pubrelofficer">Public Relations Officer</option>
+                    <option value="projmanager">Project Manager</option>
+                    <option value="4thyearrep">Fourth Year Representative</option>
+                    <option value="3rdyearrep">Third Year Representative</option>
+                    <option value="2ndyearrep">Second Year Representative</option>
+                    <option value="1styearrep">First Year Representative</option>
+                </select>
+            </div>
+
+            <!-- Questions -->
+            <div class="form-group">
+                <p>What is your question?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your questions here..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button"><span2></span2>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
